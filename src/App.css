@@ -1,0 +1,24 @@
+
+@font-face {
+  font-family: 'Lexend';
+  src: url(../src/assets/Lexends/Lexend-Light.ttf);
+}
+
+@font-face {
+  font-family: 'Lexend2';
+  src: url(../src/assets/Lexends/Lexend-Bold.ttf);
+}
+
+#root {
+  margin: 0 auto;
+  font-family: "Lexend";
+}
+
+
+
+
+
+
+.read-the-docs {
+  color: #888;
+}
