@@ -9,11 +9,8 @@ export default function Board(){
                     <div className='flex'>  
                         <div className='flex-auto w-6/12 justify-center text-sm text-white m-4 pt-4'>
                             <h1 style={{fontFamily:"Lexend2", fontSize:"35px"}}><strong>La fierté de tout un continent</strong></h1>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo enim est consequatur. Qui non culpa illo, minima dignissimos sunt, corrupti omnis quam velit dolor in. Eaque eligendi in consequatur placeat!
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo enim est consequatur. Qui non culpa illo, minima dignissimos sunt, corrupti omnis quam velit dolor in. Eaque eligendi in consequatur placeat!
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo enim est consequatur. Qui non culpa illo, minima dignissimos sunt, corrupti omnis quam velit dolor in. Eaque eligendi in consequatur placeat!
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo enim est consequatur. Qui non culpa illo, minima dignissimos sunt, corrupti omnis quam velit dolor in. Eaque eligendi in consequatur placeat!
+                            <p className='mt-4'><strong>MADES</strong> est une organisation dynamique dédiée à la promotion du sport et de l'excellence dans les domaines du tennis, du CrossFit et bien plus encore. Nous accompagnons les entraîneurs dans leur parcours professionnel en proposant des programmes de formation innovants et des outils adaptés aux besoins actuels du marché.
+                            Notre mission est de transformer la passion en profession, en négociant des opportunités internationales pour les coachs et en leur offrant des ressources pour réussir. Grâce à une équipe de professionnels engagés, MADES crée des expériences d'apprentissage enrichissantes et impactantes, tout en renforçant la communauté sportive à travers le monde.
                             </p>
                         </div>
                         <div className='flex-1 pt-4' style={{ display:"flex",justifyContent:"end"}}>
@@ -25,7 +22,7 @@ export default function Board(){
             <div className="contenant flex justify-center">
                 <div className="w-full max-w-[1200px]">
                 <div className='haut'>
-                        <h2 style={{fontSize:"25px"}}><strong>Découvrez désormais nos prochaines formations</strong></h2>
+                        <h2 className='m-4' style={{fontSize:"25px"}}><strong>Découvrez désormais nos prochaines formations</strong></h2>
                     </div>
 
                 </div>

@@ -1,4 +1,4 @@
-
+import './stats.css'
 
 
 export default function Stats(){
@@ -9,19 +9,19 @@ export default function Stats(){
             <div className="w-full max-w-[1200px]">
                 <div  className=''>
                     <div className='flex' style={{   alignItems: "center", textAlign: "center" }}>
-                        <div className='flex-1' style={{ flex: 1,  }}>
-                                    <a href="" style={{color:"#136c95"}}><span style={{ fontSize: "50px", fontFamily: "Lexend2" }}>50+</span>
+                        <div className='stat col' style={{ flex: 1,  }}>
+                                    <a  href="" style={{color:"#136c95"}}><span style={{ fontSize: "50px", fontFamily: "Lexend2" }}>50+</span>
                                         <br />
                                         Pays du Monde
                                     </a>
                         </div>
-                        <div className='col' style={{ flex: 1 }}>
+                        <div className='stat col' style={{ flex: 1 }}>
                                     <a href="" style={{color:"#136c95"}} ><span style={{ fontSize: "50px", fontFamily: "Lexend2",  }}>15+</span>
                                         <br />
                                         Coach placés
                                     </a>
                         </div>
-                        <div className='col' style={{ flex: 1 }}>
+                        <div className='stat col' style={{ flex: 1 }}>
                             <a href="" style={{color:"#136c95"}}>
                                 <span style={{ fontSize: "50px", fontFamily: "Lexend2" }}>12+</span>
                                 <br />
