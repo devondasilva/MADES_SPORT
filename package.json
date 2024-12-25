@@ -10,12 +10,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "jquerry": "^0.0.1-security",
+    "mon-projet-mades": "file:",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.4.0",
     "react-native-youtube": "^2.0.2",
     "react-player": "^2.16.0",
-    "react-youtube": "^10.1.0"
+    "react-router-dom": "^7.1.0",
+    "react-youtube": "^10.1.0",
+    "reactdom": "^2.0.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.15.0",

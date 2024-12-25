@@ -1,10 +1,13 @@
 
 import YouTube from 'react-youtube';
+import type { YouTubeEvent } from 'react-youtube';
 
 export default function Video() {
-  const handleOnReady = (event: any) => {
-    // Access the player instance and manipulate it if needed
-    event.target.pauseVideo();
+  const handleOnReady = (event: YouTubeEvent) => {
+    // Access the player instance from the event
+    const player = event.target;
+    // Pause the video
+    player.pauseVideo();
   };
 
   return (
