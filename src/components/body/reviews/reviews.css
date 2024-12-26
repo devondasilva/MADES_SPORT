@@ -1,32 +1,33 @@
-.review-container {
-    background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .profile-overlay a {
-    text-decoration: none;
-    font-size: 1rem;
-  }
-  
-  .star {
-    cursor: pointer;
-  }
-  
-  .star:hover {
-    color: #FFD700;
-  }
-  
-  .rating-container {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .rating-feedback {
-    font-size: 1rem;
-  }
-  
+/* reviews.css */
 
-.image-coach{
-    height: 200px;
-}
+/* Limite la hauteur du texte lorsqu'il est masqué */
+.max-h-20 {
+    max-height: 5rem; /* Ajustez selon vos besoins */
+    line-height: 1.25rem;
+  }
+  
+  /* Pour gérer l'overflow du texte */
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  
+  /* Styles pour l'image qui prend toute la hauteur */
+  .profile-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .image-coach {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Assure que l'image couvre toute la hauteur et la largeur */
+  }
+  
+  /* Styles pour le bouton "Afficher plus" */
+  button {
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  

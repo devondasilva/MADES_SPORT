@@ -1,59 +1,58 @@
-import { useState } from 'react';
-import { IoPerson } from "react-icons/io5";
+import React, { useState } from 'react';
 import './reviews.css';
 
-// Interface pour la structure des props
 interface ModifProps {
   Nom: string;
   Nationalite: string;
   Texte: string;
   imgn?: string;
+  proflink?: string;
 }
 
-const Review: React.FC<ModifProps> = ({ Nom, Nationalite, Texte, imgn }) => {
-  // Etat local pour gérer la valeur de la note (entre 0 et 5)
-  const [rating, setRating] = useState<number>(0);
+const Review: React.FC<ModifProps> = ({ Nom, Nationalite, Texte, imgn, proflink }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
 
-  // Fonction pour gérer le changement de note
-  const handleRating = (newRating: number) => {
-    setRating(newRating);
+  const handleToggle = () => {
+    setIsExpanded(!isExpanded);
   };
 
   return (
-    <div className="review-container rounded-lg shadow-lg overflow-hidden my-4 bg-white">
-      <div className="review-grid grid grid-cols-1 md:grid-cols-2 gap-4">
-        {/* Image Profil */}
-        <div className="profile-image relative rounded-lg overflow-hidden">
-          <img src={imgn} alt="Profil" className="image-coach w-full object-cover" />
+    <div className="review-container rounded-lg shadow-lg overflow-hidden my-4 bg-white flex flex-col">
+      <div className="review-grid grid grid-cols-1 md:grid-cols-2 gap-4 h-full">
+
+        {/* Image Profil - Flexbox pour occuper toute la hauteur */}
+        <div className="profile-image relative rounded-lg overflow-hidden h-full">
+          <img 
+            src={imgn} 
+            alt="Profil" 
+            className="image-coach w-full h-full object-cover" 
+          />
           <div className="profile-overlay absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-            <a href="#" target="_blank" rel="noopener noreferrer" className="text-white text-sm flex items-center">
-              <IoPerson className="inline mr-2" />
+            <a href={proflink} target="_blank" rel="noopener noreferrer" className="text-white text-sm flex items-center">
               Voir son Profil
             </a>
           </div>
         </div>
 
         {/* Détails utilisateur */}
-        <div className="user-details text-center md:text-left flex flex-col justify-center">
-          <h2 className="font-bold text-xl text-gray-800" style={{fontFamily:"Lexend2"}}>{Nom}</h2>
-          <h3 className=" text-gray-600 mt-2">{Nationalite}</h3>
-          <p className="text-sm text-gray-500 mt-2">{Texte}</p>
+        <div className="user-details text-center md:text-left flex flex-col justify-between h-full py-4 px-2">
+          <h2 className="font-bold text-md text-gray-800">{Nom}</h2>
+          <h3 className="text-gray-600 mt-2">{Nationalite}</h3>
+          
+          {/* Texte avec hauteur limitée */}
+          <p 
+            className={`text-sm text-gray-500 mt-2 ${isExpanded ? 'h-auto' : 'max-h-20 overflow-hidden'}`}
+          >
+            {Texte}
+          </p>
 
-          {/* Section d'étoiles pour la notation */}
-          <div className="rating-container flex justify-center mt-4">
-            {[1, 2, 3, 4, 5].map((star) => (
-              <span
-                key={star}
-                className={`star text-2xl cursor-pointer transition-all duration-200
-                  ${star <= rating ? "text-yellow-500" : "text-gray-300"}`}
-                onClick={() => handleRating(star)}
-                onMouseEnter={(e) => (e.target as HTMLElement).style.color = '#FFD700'}
-                onMouseLeave={(e) => (e.target as HTMLElement).style.color = star <= rating ? '#FFD700' : '#e4e5e9'}
-              >
-                ★
-              </span>
-            ))}
-          </div>
+          {/* Bouton pour afficher plus */}
+          <button 
+            onClick={handleToggle} 
+            className=" mt-2 "
+          >
+            {isExpanded ? "Afficher moins" : "Afficher plus"}
+          </button>
         </div>
       </div>
     </div>

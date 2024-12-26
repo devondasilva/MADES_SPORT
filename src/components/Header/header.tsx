@@ -35,17 +35,17 @@ const Header: React.FC = () => {
           <div className="ml-auto flex items-center space-x-8">
             <ul className="flex space-x-8" >
               <li>
-                <a href="#" className="text-sm font-semibold" id='navhaut'>HOME</a>
+                <a href="#" className="text-sm font-semibold" id='navhaut'>ACCUEIL</a>
               </li>
               <li>
-                <a href="#" className="text-sm font-semibold" id='navhaut'>ABOUT US</a>
+                <a href="#" className="text-sm font-semibold" id='navhaut'>A PROPOS DE NOUS</a>
               </li>
               <li>
-                <a href="#" className="text-sm font-semibold" id='navhaut'>OUR SERVICES</a>
+                <a href="#" className="text-sm font-semibold" id='navhaut'>NOS SERVICES</a>
               </li>
             </ul>
             <button type="button" className="transition duration-300">
-              CONTACT US
+              NOUS CONTACTEZ
             </button>
           </div>
         </div>

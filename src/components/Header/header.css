@@ -27,6 +27,7 @@ ul li{
     font-family: "Lexend2";
     padding: 10px;
     border-radius: 5px;
+    align-items: center;
 }
 
 button:hover{
