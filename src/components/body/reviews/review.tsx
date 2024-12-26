@@ -36,7 +36,7 @@ const Review: React.FC<ModifProps> = ({ Nom, Nationalite, Texte, imgn, proflink 
 
         {/* Détails utilisateur */}
         <div className="user-details text-center md:text-left flex flex-col justify-between h-full py-4 px-2">
-          <h2 className="font-bold text-md text-gray-800">{Nom}</h2>
+          <h2 className="font-bold text-md text-gray-800" style={{fontFamily:"Lexend2"}}>{Nom}</h2>
           <h3 className="text-gray-600 mt-2">{Nationalite}</h3>
           
           {/* Texte avec hauteur limitée */}
@@ -51,7 +51,7 @@ const Review: React.FC<ModifProps> = ({ Nom, Nationalite, Texte, imgn, proflink 
             onClick={handleToggle} 
             className=" mt-2 "
           >
-            {isExpanded ? "Afficher moins" : "Afficher plus"}
+            {isExpanded ? "Lire moins" : "Lire la suite "}
           </button>
         </div>
       </div>
