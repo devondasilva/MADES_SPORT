@@ -13,7 +13,7 @@ return(
 
         <>
 
-            <div className="mx-4">
+            <div className="m-4 flex items-center" style={{width:"100px"}}>
                 <img src={lienIm} alt="" />
             </div>
 

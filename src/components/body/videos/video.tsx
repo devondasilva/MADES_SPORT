@@ -11,7 +11,7 @@ export default function Video() {
   };
 
   return (
-    <div className="flex justify-center py-4 bg-gray-100">
+    <div className="flex justify-center py-4">
       <div className="w-full max-w-[1200px] m-4">
         <div className="flex justify-center">
           <YouTube

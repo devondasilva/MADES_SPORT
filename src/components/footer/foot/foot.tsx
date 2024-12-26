@@ -1,7 +1,6 @@
 import { useState } from "react";
-import lOgO from "../../assets/Images/log2Asset 8.png";
-import Partners from "./partners";
-import Logmades from "../../assets/Images/logomades.png";
+import Partners from "../partners/partners";
+import Logmades from "../../../assets/Images/logomades.png";
 import "./foot.css";
 
 interface LienProps {
@@ -31,7 +30,8 @@ const Navigation: React.FC<NavigationProps> = ({ items, type }) => {
   };
 
   return (
-    <div className="col-1 ms-4 p-4">
+    <div className="col-1 ms-10 p-4 flex justify-center">
+        <div>
       <p className="font-bold text-xl text-white" style={{fontFamily:"Lexend2"}}>{type}</p>
       <ul style={{ listStyleType: "none", padding: 0 }}>
         {items.map((item, index) => (
@@ -71,6 +71,7 @@ const Navigation: React.FC<NavigationProps> = ({ items, type }) => {
           </li>
         ))}
       </ul>
+      </div>
     </div>
   );
 };
@@ -84,43 +85,48 @@ export default function Foot() {
   ];
 
   const socials: SocialProps[] = [
-    { titre: "FACEBOOK", adres: "/" },
+    { titre: "FACEBOOK", adres: "https://web.facebook.com/ProjetMADES" },
     { titre: "INSTAGRAM", adres: "/" },
-    { titre: "LINKEDIN", adres: "/" },
+    { titre: "LINKEDIN", adres: "https://www.linkedin.com/company/projet-mades" },
     { titre: "WHATSAPP", adres: "/" },
   ];
 
   return (
     <>
-      <div className="flex h-32 items-center">
-      <p
-            className="flex justify-center text-lg text-white my-4"
-            style={{ fontFamily: "Lexend2" }}
+    
+      <div className="my-10 max-w-1200px items-center">
+        <p
+            className="flex justify-center text-lg text-sky-700 my-4"
+            style={{ 
+              fontFamily: "Lexend2",
+              fontSize:"35px"
+             }}
           >
             NOS PARTENAIRES
           </p>
         <Partners />
       </div>
-      <div className="grid grid-cols-8 mx-6">
-        <img src={lOgO} alt="Logo" className="col-span-1 mx-3" />
-      </div>
+      <div className=" flex justify-center" style={{backgroundColor: "#3B94D0"}}>
+       <div className="w-full max-w-[1200px]">
 
-      <div
-        className="grid grid-flow-row row-span-2 mt-4 pt-4"
-        style={{ backgroundColor: "#3B94D0", marginTop: "20px" }}
-      >
-        <div >
-          <div className="grid grid-cols-4  h-50 uppercase">
-            <div className="col-1 border ms-10 bg-white px-6 flex items-center">
-              <img src={Logmades} alt="logo mades" />
+          <div
+            className="grid grid-flow-row row-span-2 mt-4 pt-4"
+            style={{ backgroundColor: "#3B94D0", marginTop: "20px" }}
+          >
+            <div >
+              <div className="grid grid-cols-3  h-50 uppercase">
+                <div className="col-1 border ms-10 bg-white px-6 flex items-center">
+                  <img src={Logmades} alt="logo mades" />
+                </div>
+                <Navigation items={items} type="Navigation" />
+                <Navigation items={socials} type="Socials" />
+              </div>
             </div>
-            <Navigation items={items} type="Navigation" />
-            <Navigation items={socials} type="Socials" />
+            <div className="flex justify-center my-10" style={{ color: "white" }}>
+              <p>Copyright © DAS COMMUNICATION</p>
+            </div>
           </div>
-        </div>
-        <div className="flex justify-center my-10" style={{ color: "white" }}>
-          <p>Copyright © DAS COMMUNICATION</p>
-        </div>
+          </div>
       </div>
     </>
   );
