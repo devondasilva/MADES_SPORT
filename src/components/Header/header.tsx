@@ -1,8 +1,5 @@
-import './header.css';
-import Log from '../../assets/Images/logomades.png';
-
-
-
+import "./header.css";
+import Log from "../../assets/Images/logomades.png";
 
 // interface menuprops{
 //  titre: string,
@@ -10,8 +7,6 @@ import Log from '../../assets/Images/logomades.png';
 // }
 
 const Header: React.FC = () => {
-
-
   // const menu=[
   //   {titre: "HOME",
   //     lien: "https://google.com"
@@ -24,7 +19,6 @@ const Header: React.FC = () => {
   //   }
   // ]
 
-
   return (
     <div className="bg-gray-200 flex justify-center">
       <div className="w-full max-w-[1200px]">
@@ -33,15 +27,25 @@ const Header: React.FC = () => {
             <img src={Log} alt="Logo" className="h-10" />
           </div>
           <div className="ml-auto flex items-center space-x-8">
-            <ul className="flex space-x-8" >
+            <ul className="flex space-x-8">
               <li>
-                <a href="#" className="text-sm font-semibold" id='navhaut'>ACCUEIL</a>
+                <a href="#" className="text-sm font-semibold" id="navhaut">
+                  ACCUEIL
+                </a>
               </li>
               <li>
-                <a href="#" className="text-sm font-semibold" id='navhaut'>A PROPOS DE NOUS</a>
+                <a
+                  href="/formations"
+                  className="text-sm font-semibold"
+                  id="navhaut"
+                >
+                  A PROPOS DE NOUS
+                </a>
               </li>
               <li>
-                <a href="#" className="text-sm font-semibold" id='navhaut'>NOS SERVICES</a>
+                <a href="#" className="text-sm font-semibold" id="navhaut">
+                  NOS SERVICES
+                </a>
               </li>
             </ul>
             <button type="button" className="transition duration-300">
