@@ -4,11 +4,12 @@ import box from '../../../assets/Images/ballsboxAsset 6.png';
 export default function Board() {
     return (
         <>
+            {/* Section principale avec texte et image */}
             <div className="flex justify-center bg-sky-600 py-6">
                 <div className="w-full max-w-[1200px] px-4">
-                    <div className="flex items-center gap-8">
+                    <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8">
                         {/* Section Texte */}
-                        <div className="w-8/12 text-sm text-white">
+                        <div className="lg:w-8/12 w-full text-sm text-white">
                             <h1
                                 className="text-lg font-bold"
                                 style={{
@@ -23,19 +24,21 @@ export default function Board() {
                             </p>
                         </div>
                         {/* Section Image */}
-                        <div className="w-4/12 flex justify-end">
+                        <div className="lg:w-4/12 w-full flex justify-center lg:justify-end">
                             <img
                                 src={box}
                                 alt="Boîte"
-                                style={{ height: "250px", width: "auto" }}
+                                className="h-[200px] lg:h-[250px] w-auto"
                             />
                         </div>
                     </div>
                 </div>
             </div>
+
+            {/* Section d'information */}
             <div className="contenant flex justify-center py-6">
                 <div className="w-full max-w-[1200px] px-4">
-                    <div className="haut">
+                    <div className="haut text-center">
                         <h2 className="my-4 text-2xl font-bold">
                             Découvrez désormais nos prochaines formations
                         </h2>
