@@ -16,6 +16,7 @@ const Reviews: React.FC = () => {
       Texte: "En Tunisie, je forme des joueurs passionnés, qu'ils soient débutants ou plus expérimentés. Mon approche est centrée sur la technique et la stratégie de jeu, avec une attention particulière à la préparation mentale des athlètes.",
       imgn: "https://scontent.fcoo1-1.fna.fbcdn.net/v/t39.30808-6/384399669_279919354923781_5698624011657978969_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFdiT6MqMYkbCFH0KEOmLdM_eZDwRQSOHT95kPBFBI4dNdN2bYMAMTwYbyXSDSapMj9a27847RFHoaXeoc9dcTV&_nc_ohc=Aulqpz2QuFIQ7kNvgGjaQmp&_nc_zt=23&_nc_ht=scontent.fcoo1-1.fna&_nc_gid=A5nmRJmw9kwFpSIiDXdttTh&oh=00_AYCdu_7Aua8MFrB4DVlHmXM9cPxIvZwuFoWrDacq6Ew07g&oe=677222D8",
       proflink:"https://web.facebook.com/profile.php?id=100087171542529"
+      proflink: "https://www.facebook.com/devon.dasilva.37",
     },
     {
       Nom: "Bonaventure DANHOUAN",
@@ -23,6 +24,7 @@ const Reviews: React.FC = () => {
       Texte: "Je travaille actuellement en Tunisie, où je partage mes connaissances et mon expérience avec des joueurs souhaitant progresser à tous les niveaux. Mon approche est de rendre chaque joueur unique dans son jeu tout en renforçant sa confiance en lui.",
       imgn: "https://scontent.fcoo1-2.fna.fbcdn.net/v/t39.30808-6/427572695_122100831368211228_2548083030529694279_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeG2aa760P7jqjCGdzmpvSl26KeGbwOTQg7op4ZvA5NCDmAscxS-pNhHzVV8fszY9w53_BYshzz3qHvicBqIULlR&_nc_ohc=GHXHYw9MZZYQ7kNvgHgW9M-&_nc_zt=23&_nc_ht=scontent.fcoo1-2.fna&_nc_gid=AfRb7Aya1wqyrSVcMkO_GH1&oh=00_AYBgxdQL5MyBykb8XEkzO7Mp9BLJw4pGuQBhYNIC-7_WVw&oe=677230DF",
       proflink:"https://web.facebook.com/profile.php?id=61556336846023"
+      imgn: "https://scontent.fcoo1-2.fna.fbcdn.net/v/t39.30808-6/427572695_122100831368211228_2548083030529694279_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeG2aa760P7jqjCGdzmpvSl26KeGbwOTQg7op4ZvA5NCDmAscxS-pNhHzVV8fszY9w53_BYshzz3qHvicBqIULlR&_nc_ohc=G0ZNum1VuBQQ7kNvgHRzpNy&_nc_zt=23&_nc_ht=scontent.fcoo1-2.fna&_nc_gid=A5gnjWoxENkkhksF_PnUF1W&oh=00_AYAlq9GyTONbP-xPq24ggaEigkwXAksgEk5Wk5dQOTVGcg&oe=6792B5DF",
     },
     {
       Nom: "Hervé TOGBE",

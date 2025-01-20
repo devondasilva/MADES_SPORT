@@ -1,8 +1,26 @@
+import "./header.css";
+import Log from "../../assets/Images/logomades.png";
+
+// interface menuprops{
+//  titre: string,
+//  lien: string
+// }
 import { useState } from "react";
 import './header.css';
 import Log from '../../assets/Images/logomades.png';
 
 const Header: React.FC = () => {
+  // const menu=[
+  //   {titre: "HOME",
+  //     lien: "https://google.com"
+  //   },
+  //   {titre:"ABOUT US",
+  //     lien: "https://google.com"
+  //   },
+  //   {titre: "OUR SERVICES",
+  //     lien: "https://google.com"
+  //   }
+  // ]
   // État pour gérer le menu mobile
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -16,8 +34,13 @@ const Header: React.FC = () => {
         <div className="flex items-center justify-between px-6 py-3">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <img src={Log} alt="Logo" className="h-10" />
+            <a href="/">
+              <img src={Log} alt="Logo" className="h-10" />
+            </a>
+            
           </div>
+          <div className="ml-auto flex items-center space-x-8">
+            <ul className="flex space-x-8">
 
           {/* Menu mobile: hamburger icon */}
           <div className="flex md:hidden">
@@ -46,15 +69,34 @@ const Header: React.FC = () => {
           <div className="hidden md:flex items-center space-x-8">
             <ul className="flex space-x-8 items-center">
               <li>
+                <a href="/" className="text-sm " id="navhaut">
+                  ACCUEIL
+                </a>
                 <a href="#" className="text-sm font-semibold text-gray-800 hover:text-gray-600">ACCUEIL</a>
               </li>
               <li>
+                <a
+                  href="/formations"
+                  className="text-sm"
+                  id="navhaut"
+                >
+                  A PROPOS DE NOUS
+                </a>
                 <a href="#" className="text-sm font-semibold text-gray-800 hover:text-gray-600">A PROPOS DE NOUS</a>
               </li>
               <li>
+                <a href="/Formation" className="text-sm " id="navhaut">
+                  NOS FORMATIONS
+                </a>
                 <a href="#" className="text-sm font-semibold text-gray-800 hover:text-gray-600">NOS SERVICES</a>
               </li>
             </ul>
+            <a href="/Nos_contacts">
+              <button type="button" className="transition duration-300">
+                NOUS CONTACTEZ
+              </button>
+            </a>
+            
             <button className="px-4 py-2 bg-sky-600 text-white font-semibold rounded-lg hover:bg-sky-700 transition duration-300">
               NOUS CONTACTEZ
             </button>
