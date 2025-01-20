@@ -23,11 +23,11 @@ const Editions: React.FC = () => {
   ];
 
   return (
-    <div className="flex justify-center py-6 my-4 bg-gray-100">
+    <div className="flex justify-center py-6 mx-4 ">
       <div className="w-full max-w-[1200px] py-4">
         <div>
           <h1
-            className="text-sky-700 text-center my-4 text-4xl font-semibold"
+            className="text-sky-700 text-center m-4 text-4xl font-semibold"
             style={{ fontFamily: "Lexend2" }}
           >
             BEACH TENNIS

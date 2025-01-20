@@ -11,6 +11,8 @@ import {
 
 const Contact: React.FC = () => {
   return (
+
+    <>
     <div className="bg-white text-gray-900 p-4 md:p-8">
       <div className="max-w-6xl mx-auto">
         <div className="lg:w-[65%] w-full lg:px-20 md:px-8 px-4 py-4">
@@ -147,6 +149,7 @@ const Contact: React.FC = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

@@ -9,6 +9,7 @@ interface ElementProps {
 }
 
 const Formation: React.FC<ElementProps> = ({ im, titre, content, adres }) => {
+  
   return (
     <article className="formation-card grid grid-rows-2 border-2 m-2 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
       {/* Image */}
@@ -35,8 +36,6 @@ const Formation: React.FC<ElementProps> = ({ im, titre, content, adres }) => {
           <a
             href={adres}
             className="flex items-center text-sky-700 hover:underline mt-4"
-            target="_blank"
-            rel="noopener noreferrer"
           >
             <span className="font-semibold">Lire la suite</span>
             <HiArrowRight className="ml-2" />
