@@ -8,7 +8,7 @@ const Editions: React.FC = () => {
     {
       im: Im,
       titre: "EDITION 2022",
-      adres: "https://github.com/",
+      adres: "/Galerie",
     },
     {
       im: Im2,
@@ -24,6 +24,7 @@ const Editions: React.FC = () => {
 
   return (
     <div className="flex justify-center py-6 mx-4 ">
+      
       <div className="w-full max-w-[1200px] py-4">
         <div>
           <h1
@@ -55,6 +56,7 @@ const Editions: React.FC = () => {
                 title={item.titre}
                 adres={item.adres}
               />
+                
             ))}
           </div>
         </div>

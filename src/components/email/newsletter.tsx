@@ -2,7 +2,7 @@ import React from "react";
 
 const Newsletter: React.FC = () => {
   return (
-    <section className="bg-blue-500 text-white py-6 px-4">
+    <section className="bg-sky-600 text-white py-6 px-4">
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center justify-between space-y-2 lg:space-y-0">
         <div className="lg:mr-4">
           <h2 className="text-xl lg:text-2xl font-bold">
@@ -15,13 +15,14 @@ const Newsletter: React.FC = () => {
         </div>
 
         <form className="flex items-center bg-white p-1.5 rounded-md w-full lg:w-auto">
-          <span className="text-blue-500 pl-2">
+          <span className="text-sky-700 pl-2 ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="30"
               height="30"
               viewBox="0 0 24 24"
               fill="none"
+              color="blue"
             >
               <path
                 d="M17 20.5H7c-3 0-5-1.5-5-5v-7c0-3.5 2-5 5-5h10c3 0 5 1.5 5 5v7c0 3.5-2 5-5 5Z"
@@ -48,7 +49,7 @@ const Newsletter: React.FC = () => {
           />
           <button
             type="submit"
-            className="bg-blue-500 text-white px-4 py-2 rounded-md text-sm lg:text-base hover:bg-blue-600 transition"
+            className="bg-sky-600 text-white px-4 py-2 rounded-md text-sm lg:text-base hover:bg-blue-600 transition"
           >
             Je m'abonne
           </button>

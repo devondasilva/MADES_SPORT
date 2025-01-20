@@ -12,6 +12,7 @@ import ContactUs from "./pages/Contact/contact-us";
 import Formation from "./pages/Formations/formations";
 import BeachTennis from "./pages/Formations/BeachTennis/beachTennis";
 import Tennis from "./pages/Formations/LawnTennis/Tennis";
+import Gallery from "./components/formation/gallery/gallery";
 
 const root = document.getElementById("root");
 
@@ -26,6 +27,7 @@ if (root) {
         <Route path="/Formations/BeachTennis" element={<BeachTennis/>} />
         <Route path="/Formations/Tennis" element={<Tennis/>} />
         <Route path="/Nos_contacts" element={<ContactUs/>} />
+        <Route path="/Galerie" element={<Gallery/>} />
       </Routes>
     </BrowserRouter>
   );

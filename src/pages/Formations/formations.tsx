@@ -4,7 +4,7 @@ import Foot from "../../components/footer/foot/foot";
 import Banner from "../../components/formation/banner/banner";
 import Editions from "../../components/formation/edition/editions";
 import Newsletter from "../../components/email/newsletter";
-// import box from "../../../assets/Images/ballsboxAsset6.png";
+import im6 from "../../assets/Images/im6.png"    // import box from "../../../assets/Images/ballsboxAsset6.png";
 
 export default function Formation() {
   return (
@@ -12,7 +12,7 @@ export default function Formation() {
       <Header />
       <Banner 
         title="NOS FORMATIONS" 
-        imageSrc='' 
+        imageSrc={im6} 
       />
       <Editions />
       <Formations />
