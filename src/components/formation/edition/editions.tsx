@@ -3,7 +3,13 @@ import Im2 from "../../../assets/Images/portrait-athletic-male-tennis-player.jpg
 import Im3 from "../../../assets/Images/people-playing-padle-tennis-inside.jpg";
 import Edition from "./edition";
 
-const Editions: React.FC = () => {
+
+interface EditionProps{
+  formation: string,
+  content: string
+}
+
+const Editions: React.FC <EditionProps> = ({formation , content}) => {
   const contenu = [
     {
       im: Im,
@@ -31,22 +37,10 @@ const Editions: React.FC = () => {
             className="text-sky-700 text-center m-4 text-4xl font-semibold"
             style={{ fontFamily: "Lexend2" }}
           >
-            BEACH TENNIS
+            {formation}
           </h1>
-          <p>
-            {" "}
-            LOrem Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Aperiam optio voluptate similique? Ipsa quae commodi illo eum
-            nesciunt recusandae et odio animi. Maxime deleniti natus labore vero
-            ad repudiandae consectetur. Veniam ratione quis ipsum voluptates
-            quia. Modi quia ab dolores quam voluptatum itaque accusantium
-            voluptatem sit nihil reprehenderit officia ut, impedit, commodi
-            dolore consectetur deleniti unde! Nesciunt soluta assumenda maxime.
-            Possimus architecto quisquam impedit. Repellendus magnam
-            reprehenderit expedita hic quidem voluptatibus quae suscipit eius
-            qui nisi eveniet dignissimos vitae velit iure cupiditate omnis
-            laborum, rem corporis architecto, explicabo sint ratione? Ducimus,
-            sed. Dolorum quae molestias perferendis eum esse corporis ab.
+          <p className="text-sm">
+            {content}
           </p>
           <div className="mt-3 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {contenu.map((item, index) => (

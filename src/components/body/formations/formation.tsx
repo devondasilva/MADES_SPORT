@@ -1,4 +1,3 @@
-import './formations.css';
 import { HiArrowRight } from "react-icons/hi";
 
 interface ElementProps {
@@ -9,36 +8,28 @@ interface ElementProps {
 }
 
 const Formation: React.FC<ElementProps> = ({ im, titre, content, adres }) => {
-  
   return (
-    <article className="formation-card grid grid-rows-2 border-2 m-2 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+    <article className="formation-card shadow-lg rounded-lg overflow-hidden bg-white transition-transform transform hover:scale-105">
       {/* Image */}
-      <div className="row-span-1">
+      <div className="formation-image-container">
         <img
           src={im}
           alt={titre || "Image de formation"}
-          className="formation-image w-full h-48 sm:h-60 object-cover"
+          className="w-full h-56 object-cover"
         />
       </div>
-      
+
       {/* Content */}
-      <div className="row-span-1 p-4 flex flex-col justify-between">
-        <h2
-          className="text-sky-700 text-center font-bold text-lg mt-2"
-          style={{ fontFamily: "Lexend2" }}
-        >
-          {titre}
-        </h2>
-        <p className="text-black text-sm my-3 leading-relaxed">
-          {content}
-        </p>
+      <div className="p-4 flex flex-col justify-between space-y-4">
+        <h2 className="text-lg font-bold text-gray-800">{titre}</h2>
+        <p className="text-sm text-gray-600">{content}</p>
         {adres && (
           <a
             href={adres}
-            className="flex items-center text-sky-700 hover:underline mt-4"
+            className="flex items-center text-sky-600 hover:text-blue-800 transition"
           >
-            <span className="font-semibold">Lire la suite</span>
-            <HiArrowRight className="ml-2" />
+            <span>Lire la suite</span>
+            <HiArrowRight className="ml-2 text-lg" />
           </a>
         )}
       </div>

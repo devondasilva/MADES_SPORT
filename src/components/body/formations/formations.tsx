@@ -4,46 +4,56 @@ import Im from "../../../assets/Images/black-man-with-tennis-racket-beach.jpg";
 import Im2 from "../../../assets/Images/portrait-athletic-male-tennis-player.jpg";
 import Im3 from "../../../assets/Images/people-playing-padle-tennis-inside.jpg";
 
-const Formations: React.FC = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [slidesPerView, setSlidesPerView] = useState(3);
+// Hook personnalisé pour récupérer la taille de la fenêtre
+const useWindowSize = () => {
+  const [windowSize, setWindowSize] = useState({ width: window.innerWidth });
 
+  useEffect(() => {
+    const handleResize = () => setWindowSize({ width: window.innerWidth });
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return windowSize;
+};
+
+const Formations: React.FC = () => {
   const contenu = [
     {
       im: Im,
       titre: "BEACH TENNIS",
-      content: "Découvrez le beach tennis, une discipline dynamique combinant le tennis traditionnel et l'esprit de la plage. Apprenez les techniques spécifiques pour exceller dans ce sport tout en ayant du plaisir sous le soleil.",
-      adres: "/Formations/BeachTennis",
+      content:
+        "Découvrez le beach tennis, une discipline dynamique combinant le tennis traditionnel et l'esprit de la plage. Apprenez les techniques spécifiques pour exceller dans ce sport tout en ayant du plaisir.",
+      adres: "/Formation/BeachTennis",
     },
     {
       im: Im2,
-      titre: "LAWN TENNIS",
-      content: "Le tennis sur gazon est l'un des sports les plus emblématiques au monde. Découvrez les bases et les stratégies pour devenir un joueur accompli, que ce soit en compétition ou pour le loisir.",
-      adres: "/Formations/Tennis",
+      titre: "TENNIS",
+      content:
+        "Le tennis sur gazon est l'un des sports les plus emblématiques au monde. Découvrez les bases et les stratégies pour devenir un joueur accompli, que ce soit en compétition ou pour le loisir.",
+      adres: "/Formation/Tennis",
     },
     {
       im: Im3,
       titre: "PADEL SPORT",
-      content: "Le padel est un sport en plein essor qui combine des éléments de tennis et de squash. Apprenez les bases, les techniques avancées et comment maîtriser ce sport passionnant.",
-      adres: "/Formations/Padel",
+      content:
+        "Le padel est un sport en plein essor qui combine des éléments de tennis et de squash. Apprenez les bases, les techniques avancées et comment maîtriser ce sport passionnant.",
+      adres: "/Formation/Padel",
     },
     {
-      im: Im3,
-      titre: "PADEL SPORT",
-      content: "Le padel est un sport en plein essor qui combine des éléments de tennis et de squash. Apprenez les bases, les techniques avancées et comment maîtriser ce sport passionnant.",
-      adres: "/Formations/Padel",
+      im: "https://img.freepik.com/premium-photo/closeup-squash-game-racquet-ball-training-equipment_266732-35306.jpg?w=1060",
+      titre: "SQUASH",
+      content:
+        "Plongez dans l'univers du squash, un sport intense et stratégique. Développez votre rapidité, votre endurance et vos réflexes tout en apprenant à anticiper et ...",
+      adres: "/Formation/Squash",
     },
   ];
 
-  // Adjust slides per view based on window size
-  useEffect(() => {
-    const updateSlidesPerView = () => {
-      setSlidesPerView(window.innerWidth < 768 ? 1 : 3);
-    };
-    updateSlidesPerView();
-    window.addEventListener("resize", updateSlidesPerView);
-    return () => window.removeEventListener("resize", updateSlidesPerView);
-  }, []);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const { width } = useWindowSize();
+
+  // Détermine le nombre de slides visibles en fonction de la taille de l'écran
+  const slidesPerView = width >= 1024 ? 3 : width >= 768 ? 2 : 1;
 
   const nextSlide = () => {
     if (currentIndex < contenu.length - slidesPerView) {
@@ -57,38 +67,71 @@ const Formations: React.FC = () => {
     }
   };
 
+  // Auto-défilement toutes les 5 secondes
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (currentIndex < contenu.length - slidesPerView) {
+        setCurrentIndex(currentIndex + 2);
+      } else {
+        setCurrentIndex(0); // Revenir au début
+      }
+    }, 5000);
+
+    return () => clearInterval(interval); // Nettoyage
+  }, [currentIndex, slidesPerView, contenu.length]);
+
   return (
-    <div className="flex justify-center py-6 my-4 bg-gray-100">
-      <div className="w-full max-w-[1200px] py-4 relative">
-        <h1 className="text-sky-700 text-center my-4 text-4xl font-semibold" style={{ fontFamily: "Lexend2" }}>
-          NOS FORMATIONS
-        </h1>
-        <div className="flex overflow-hidden">
-          {/* Display slides */}
-          {contenu.slice(currentIndex, currentIndex + slidesPerView).map((item, index) => (
-            <div key={index} className="flex-shrink-0 w-full md:w-1/3 px-2">
-              <Formation im={item.im} titre={item.titre} content={item.content} adres={item.adres} />
-            </div>
-          ))}
-        </div>
-        {/* Navigation buttons */}
+    <div className="flex justify-center py-6 bg-gray-100">
+      <div
+        className="w-full max-w-[1200px] py-3 overflow-hidden relative"
+        style={{ height: "500px" }} // Hauteur fixe pour le conteneur
+      >
+        <div
+            className="flex transition-transform duration-1000 ease-in-out px-2"
+            style={{
+              transform: `translateX(-${(currentIndex * 100) / slidesPerView}%)`,
+              width: `${contenu.length * (100 / slidesPerView)}%`, // Correction
+            }}
+          >
+            {contenu.map((item, index) => (
+              <div
+                key={index}
+                className="flex-shrink-0 px-2"
+                style={{
+                  width: `${100 / slidesPerView}%`, // Largeur adaptative des slides
+                  height: "100%", // Prend toute la hauteur du conteneur
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "space-between",
+                }}
+              >
+                <Formation
+                  im={item.im}
+                  titre={item.titre}
+                  content={item.content}
+                  adres={item.adres}
+                />
+              </div>
+            ))}
+          </div>
+
+
+        {/* Flèches de navigation */}
         <button
           onClick={prevSlide}
-          className={`absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-500 text-white p-2 rounded-full ${
+          className={`absolute left-0 top-1/2 transform -translate-y-1/2 text-black p-2 ${
             currentIndex === 0 ? "opacity-50 cursor-not-allowed" : ""
-          }`}
+          }`} style={{backgroundColor:"unset", fontSize:"35px"}}
           aria-label="Slide précédent"
-          disabled={currentIndex === 0}
         >
           &#60;
         </button>
         <button
           onClick={nextSlide}
-          className={`absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-500 text-white p-2 rounded-full ${
+          className={`absolute right-0 top-1/2 transform -translate-y-1/2 text-black p-2${
             currentIndex >= contenu.length - slidesPerView ? "opacity-50 cursor-not-allowed" : ""
-          }`}
+          }`} style={{backgroundColor:"unset", fontSize:"35px"}}
           aria-label="Slide suivant"
-          disabled={currentIndex >= contenu.length - slidesPerView}
         >
           &#62;
         </button>

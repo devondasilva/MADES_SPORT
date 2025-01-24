@@ -50,10 +50,10 @@ const Navigation: React.FC<NavigationProps> = ({ items, type }) => {
 
 export default function Foot() {
   const items: LienProps[] = [
-    { titre: "HOME", adres: "/" },
-    { titre: "ABOUT US", adres: "/about" },
-    { titre: "OUR SERVICES", adres: "/services" },
-    { titre: "CONTACT US", adres: "/contact" },
+    { titre: "ACCEUIL", adres: "/" },
+    { titre: "A PROPOS DE NOUS", adres: "/about" },
+    { titre: "NOS FORMATIONS", adres: "/services" },
+    { titre: "NOUS CONTACTEZ", adres: "/contact" },
   ];
 
   const socials: LienProps[] = [
@@ -88,7 +88,7 @@ export default function Foot() {
           </div>
           {/* Footer Text */}
           <div className="flex justify-center mt-10 text-white">
-            <p>Copyright © DAS COMMUNICATION</p>
+            <p>Copyright © MADES</p>
           </div>
         </div>
       </div>
