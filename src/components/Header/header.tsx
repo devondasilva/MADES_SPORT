@@ -62,10 +62,10 @@ const Header: React.FC<HeaderProps> = ({ headertitle, headerimage, children }) =
                   </a>
                 ))}
                 <a href="/Nos_contacts">
-                  <button className="contact-btn text-[12px]">NOUS CONTACTEZ</button>
+                  <button className="contact-btn text-[12px] p-4">NOUS CONTACTEZ</button>
                 </a>
                 <a href="/Dossier">
-                  <button className="contact-btn text-[12px] bg-orange-500 hover:bg-orange-600">SOUMETTRE SON DOSSIER</button>
+                  <button className="contact-btn text-[12px] bg-orange-500 hover:bg-orange-600 p-4">SOUMETTRE SON DOSSIER</button>
                 </a>
               </nav>
 
