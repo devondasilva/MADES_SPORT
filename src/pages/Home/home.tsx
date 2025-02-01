@@ -6,7 +6,7 @@ import Video from "../../components/body/videos/video";
 import Add from "../../components/body/add/add";
 import Foot from "../../components/footer/foot/foot";
 import Reviews from "../../components/body/reviews/reviews";
-import im from "../../assets/Images/imgall.jpg";
+import im from "../../assets/Images/freecompress-img2_tennis.jpg";
 
 // import { useState } from "react"
 
@@ -15,14 +15,15 @@ export default function Home() {
   return (
     <>
       <Header
-      headertitle="La fierté de tout un continent"
+      headertitle="Devenez l'entraîneur de demain avec MADES"
       headerimage={im}
       >
         <p>
-            <strong>MADES</strong> est une organisation dynamique dédiée à la promotion du sport
-            et de l'excellence dans les domaines du tennis, du CrossFit, et bien plus encore. Nous
-            accompagnons les entraîneurs dans leur parcours professionnel en proposant des
-            programmes de formation innovants et des outils adaptés aux besoins actuels du marché.
+            <strong>MADES</strong> est une organisation dédiée à l'excellence sportive. Nous proposons des formations innovantes et personnalisées pour les entraîneurs de tennis, de CrossFit et plus encore.
+            Rejoignez notre communauté et bénéficiez d'outils et de ressources adaptés à vos besoins. Ensemble, élevons le niveau de l'entraînement sportif.
+            <div className=" p-2 shadow-none mt-2 text-lg font-bold ">
+              Vos compétences nous interessent et votre emploi, notre préoccupation
+            </div>
           </p>
       </Header>
 

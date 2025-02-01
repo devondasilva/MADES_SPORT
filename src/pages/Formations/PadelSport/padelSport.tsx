@@ -1,7 +1,7 @@
 import Newsletter from "../../../components/email/newsletter";
 import Foot from "../../../components/footer/foot/foot";
 import Header from "../../../components/Header/header";
-import impadel from "../../../assets/Images/people-playing-padle-tennis-inside.jpg"
+import impadel from "../../../assets/Images/padel/freecompress-IMG_3800.jpg";
 import Editions from "../../../components/formation/edition/editions";
 export default function PadelSport() {
   return (

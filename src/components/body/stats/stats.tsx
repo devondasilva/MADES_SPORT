@@ -1,7 +1,9 @@
 
-import Im from "../../../assets/Images/black-man-with-tennis-racket-beach.jpg";
+import Im from "../../../assets/Images/freecompress-img5_padel (1).jpg";
+
 import { Link } from 'react-router-dom';
 import Stat from "./stat";
+
 
 // Composant pour afficher un élément statistique
 
@@ -42,7 +44,7 @@ export default function Stats() {
                       {/* Conteneur du texte - Centré horizontalement */}
                       <div className="flex items-center justify-center lg:w-8/12 w-full text-gray-700 px-8">
                         <div className="text-center lg:text-left"> {/* Text aligné à gauche sur grands écrans */}
-                          <h2 className="text-xl lg:text-2xl font-bold">
+                          <h2 className="text-xl lg:text-2xl font-bold ">
                             Découvrez désormais nos prochaines formations
                           </h2>
                           <p className="text-justify">
@@ -53,7 +55,7 @@ export default function Stats() {
 
                       {/* Conteneur de l'image - Centré horizontalement */}
                       <div className="lg:w-4/12 w-full flex justify-center px-4">
-                        <div className="stat1 h-60 w-60 flex items-center justify-center relative group">
+                        <div className="stat1 h-92 w-auto flex items-center justify-center relative group">
                           {/* Image */}
                           <img src={Im} alt="Homme tenant une raquette sur la plage" className="rounded-2xl rotate-image" />
                           {/* Texte "Voir plus" */}
@@ -70,7 +72,6 @@ export default function Stats() {
                 </div>
               </div>
             </div>
-
 
 
         </>

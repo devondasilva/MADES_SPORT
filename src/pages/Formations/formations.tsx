@@ -2,7 +2,9 @@ import { useEffect, useState } from "react";
 import Header from "../../components/Header/header";
 import Foot from "../../components/footer/foot/foot";
 import Newsletter from "../../components/email/newsletter";
-import im6 from "../../assets/Images/im6.png";
+import im6 from "../../assets/Images/formations/freecompress-img6_padel.jpg";
+import im7 from "../../assets/Images/tennis/freecompress-IMG_3697.jpg";
+import im8 from "../../assets/Images/formations/freecompress-formation1.jpg";
 import "../../App.css";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import Formations from "../../components/body/formations/formations";
@@ -60,7 +62,7 @@ export default function Formation() {
 
   return (
     <>
-      <Header headertitle="NOS FORMATIONS" headerimage={im6}>
+      <Header headertitle="NOS FORMATIONS" headerimage={im8}>
         <p>
           <strong>MADES</strong> est une organisation dynamique dédiée à la
           promotion du sport et de l'excellence dans les domaines du tennis, du
@@ -84,7 +86,7 @@ export default function Formation() {
 
                   {/* Petite image superposée dans l'angle inférieur droit */}
                   <img
-                    src={im6}
+                    src={im7}
                     alt="Formation"
                     className="absolute stat bottom-4 right-4 rounded-lg shadow-md w-40 h-auto lg:w-52 lg:h-auto border-2 border-white "
                   />

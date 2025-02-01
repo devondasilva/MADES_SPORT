@@ -4,7 +4,7 @@ import Newsletter from "../../../components/email/newsletter";
 import Foot from "../../../components/footer/foot/foot"; 
 import Editions from "../../../components/formation/edition/editions";
 import Header from "../../../components/Header/header";
-import imtennis from "../../../assets/Images/portrait-athletic-male-tennis-player.jpg";
+import imtennis from "../../../assets/Images/tennis/freecompress-IMG_3537.jpg";
 
 export default function Tennis() {
   return (

@@ -1,7 +1,7 @@
 import Header from "../../components/Header/header";
 import Foot from "../../components/footer/foot/foot";
 import Contact from "../../components/contact/contact";
-import imcontact from "../../assets/Images/man-handshaking-his-employer-after-being-accepted-his-new-office-job.jpg" 
+import imcontact from "../../assets/Images/formations/freecompress-im5_tennis.jpg";
 // import box from "../../assets/Images/box.png";
 
 export default function ContactUs() {
