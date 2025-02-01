@@ -62,10 +62,10 @@ const Header: React.FC<HeaderProps> = ({ headertitle, headerimage, children }) =
                   </a>
                 ))}
                 <a href="/Nos_contacts">
-                  <button className="contact-btn text-[12px]">NOUS CONTACTEZ</button>
+                  <button className="contact-btn text-[12px] p-2 bg-[#0284c7] text-white">NOUS CONTACTEZ</button>
                 </a>
                 <a href="/Dossier">
-                  <button className="contact-btn text-[12px] bg-orange-500 hover:bg-orange-600">SOUMETTRE SON DOSSIER</button>
+                  <button className="contact-btn text-[12px] bg-orange-500 hover:bg-orange-600 p-2 text-white">SOUMETTRE SON DOSSIER</button>
                 </a>
               </nav>
 
@@ -89,6 +89,11 @@ const Header: React.FC<HeaderProps> = ({ headertitle, headerimage, children }) =
                     <MenuItem>
                       <a href="/Nos_contacts" className="text-gray-800">
                         NOUS CONTACTEZ
+                      </a>
+                    </MenuItem>
+                    <MenuItem>
+                      <a href="/Dossier" className="text-gray-800">
+                        SOUMETTRE SON DOSSIER
                       </a>
                     </MenuItem>
                   </Menu>

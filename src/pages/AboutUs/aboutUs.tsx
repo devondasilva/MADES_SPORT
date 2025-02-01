@@ -1,7 +1,7 @@
 import Header from "../../components/Header/header";
 import Foot from "../../components/footer/foot/foot";
 import Contact from "../../components/contact/contact";
-import impropos from "../../assets/Images/business-partners-discussing-agreement-coffee-shop.jpg" 
+import impropos from "../../assets/Images/formations/freecompress-img6_padel.jpg"; 
 // import box from "../../assets/Images/box.png";
 
 export default function AboutUs() {

@@ -1,6 +1,6 @@
-import Im from "../../../assets/Images/black-man-with-tennis-racket-beach.jpg";
-import Im2 from "../../../assets/Images/portrait-athletic-male-tennis-player.jpg";
-import Im3 from "../../../assets/Images/people-playing-padle-tennis-inside.jpg";
+import Im from "../../../assets/Images/beachtennis/freecompress-IMG_4508 (1).jpg";
+import Im2 from "../../../assets/Images/tennis/freecompress-IMG_3536.jpg";
+import Im3 from "../../../assets/Images/padel/freecompress-IMG_3794.jpg";
 import Edition from "./edition";
 
 

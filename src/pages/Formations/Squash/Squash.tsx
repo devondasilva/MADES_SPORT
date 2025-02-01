@@ -1,4 +1,4 @@
-import imsquash from "../../../assets/Images/im6.png";
+import imsquash from "../../../assets/Images/padel/freecompress-IMG_3297.jpg";
 import Newsletter from "../../../components/email/newsletter";
 import Foot from "../../../components/footer/foot/foot";
 import Editions from "../../../components/formation/edition/editions";

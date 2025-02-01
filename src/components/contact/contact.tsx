@@ -5,7 +5,7 @@ import {
   FaMapMarkerAlt,
   FaEnvelope,
   FaFacebook,
-  FaTwitter,
+  FaLinkedin,
   FaInstagram,
 } from "react-icons/fa";
 
@@ -91,15 +91,15 @@ const Contact: React.FC = () => {
               </p>
               <div className="flex items-center mt-4 text-blue-500">
                 <div className="p-3 bg-blue-500 rounded-full mr-3">
-                  <FaPhoneAlt className="text-white" />
+                <a href="https://wa.me/+594694246191"><FaPhoneAlt className="text-white" /></a>
                 </div>
-                +6231-123456
+                +594 694 24 61 91
               </div>
               <div className="flex items-center mt-2 text-blue-500">
                 <div className="p-3 bg-blue-500 rounded-full mr-3">
-                  <FaPhoneAlt className="text-white" />
+                  <a href="https://wa.me/+15713078341"><FaPhoneAlt className="text-white" /></a>
                 </div>
-                +6285-30129517796
+                +1 571 307 8341
               </div>
             </div>
 
@@ -113,7 +113,7 @@ const Contact: React.FC = () => {
                 <div className="p-3 bg-blue-500 rounded-full mr-3">
                   <FaMapMarkerAlt className="text-white" />
                 </div>
-                Rue Caratland, n° 17, Indonésie
+                PK10 Qtier SEYIVE BP 1234 COT Benin
               </div>
             </div>
 
@@ -127,7 +127,7 @@ const Contact: React.FC = () => {
                 <div className="p-3 bg-blue-500 rounded-full mr-3">
                   <FaEnvelope className="text-white" />
                 </div>
-                contact@votresite.com
+                projetmades@gmail.com
               </div>
             </div>
 
@@ -135,13 +135,13 @@ const Contact: React.FC = () => {
               <h3 className="text-lg font-bold mb-2">Suivez-nous</h3>
               <div className="flex space-x-4 mt-4">
                 <div className="p-3 bg-blue-500 rounded-full cursor-pointer hover:bg-blue-600 transition duration-300">
-                  <FaFacebook className="text-white text-xl" />
+                  <a href="https://web.facebook.com/ProjetMADES/"><FaFacebook className="text-white text-xl" /></a>
                 </div>
                 <div className="p-3 bg-blue-500 rounded-full cursor-pointer hover:bg-blue-600 transition duration-300">
-                  <FaTwitter className="text-white text-xl" />
+                  <a href="https://www.instagram.com/projet_mades/"><FaInstagram className="text-white text-xl" /></a>
                 </div>
                 <div className="p-3 bg-blue-500 rounded-full cursor-pointer hover:bg-blue-600 transition duration-300">
-                  <FaInstagram className="text-white text-xl" />
+                 <a href="https://www.linkedin.com/company/76478246/admin/dashboard/"><FaLinkedin className="text-white text-xl" /></a>
                 </div>
               </div>
             </div>

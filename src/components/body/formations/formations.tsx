@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import Formation from "./formation";
-import Im from "../../../assets/Images/black-man-with-tennis-racket-beach.jpg";
-import Im2 from "../../../assets/Images/portrait-athletic-male-tennis-player.jpg";
-import Im3 from "../../../assets/Images/people-playing-padle-tennis-inside.jpg";
+import Im from "../../../assets/Images/freecompress-img1_beachtennis.jpg";
+import Im2 from "../../../assets/Images/freecompress-img4_tennis.jpg";
+import Im3 from "../../../assets/Images/padel/freecompress-IMG_3794.jpg";
+
 
 // Hook personnalisé pour récupérer la taille de la fenêtre
 const useWindowSize = () => {
@@ -41,7 +42,7 @@ const Formations: React.FC = () => {
       adres: "/Formation/Padel",
     },
     {
-      im: "https://img.freepik.com/premium-photo/closeup-squash-game-racquet-ball-training-equipment_266732-35306.jpg?w=1060",
+      im: Im3,
       titre: "SQUASH",
       content:
         "Plongez dans l'univers du squash, un sport intense et stratégique. Développez votre rapidité, votre endurance et vos réflexes tout en apprenant à anticiper et ...",
@@ -81,6 +82,8 @@ const Formations: React.FC = () => {
   }, [currentIndex, slidesPerView, contenu.length]);
 
   return (
+
+    <>
     <div className="flex justify-center py-6 bg-gray-100">
       <div
         className="w-full max-w-[1200px] py-3 overflow-hidden relative"
@@ -136,7 +139,11 @@ const Formations: React.FC = () => {
           &#62;
         </button>
       </div>
+      
     </div>
+   
+    
+  </>
   );
 };
 
