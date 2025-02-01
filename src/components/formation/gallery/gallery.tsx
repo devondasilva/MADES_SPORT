@@ -1,6 +1,10 @@
 import React, { useState } from "react";
-import Im from "../../../assets/Images/black-man-with-tennis-racket-beach.jpg";
-
+import Im1 from "../../../assets/Images/beachtennis/freecompress-IMG_4482 (1).jpg";
+import Im2 from "../../../assets/Images/beachtennis/freecompress-IMG_4494 (2).jpg";
+import Im3 from "../../../assets/Images/beachtennis/freecompress-IMG_4508 (1).jpg";
+import Im4 from "../../../assets/Images/beachtennis/freecompress-IMG_4513 (1).jpg";
+import Im5 from "../../../assets/Images/beachtennis/freecompress-IMG_4516 (1).jpg";
+import Im6 from "../../../assets/Images/beachtennis/freecompress-IMG_4528 (1).jpg";
 interface GalleryItemProps {
   imgSrc: string;
   imgAlt: string;
@@ -29,15 +33,15 @@ const Gallery: React.FC = () => {
   const [currentImage, setCurrentImage] = useState<string | null>(null);
 
   const galleryImages = [
-    { src: Im, alt: "Gallery Image 1" },
-    { src: Im, alt: "Gallery Image 2" },
-    { src: Im, alt: "Gallery Image 3" },
-    { src: Im, alt: "Gallery Image 4" },
-    { src: Im, alt: "Gallery Image 5" },
-    { src: Im, alt: "Gallery Image 6" },
-    { src: Im, alt: "Gallery Image 7" },
-    { src: Im, alt: "Gallery Image 8" },
-    { src: Im, alt: "Gallery Image 9" },
+    { src: Im1, alt: "Gallery Image 1" },
+    { src: Im2, alt: "Gallery Image 2" },
+    { src: Im3, alt: "Gallery Image 3" },
+    { src: Im4, alt: "Gallery Image 4" },
+    { src: Im5, alt: "Gallery Image 5" },
+    { src: Im6, alt: "Gallery Image 6" },
+    { src: Im1, alt: "Gallery Image 7" },
+    { src: Im3, alt: "Gallery Image 8" },
+    { src: Im4, alt: "Gallery Image 9" },
   ];
 
   const openModal = (imgSrc: string) => {

@@ -4,7 +4,7 @@ import Newsletter from "../../../components/email/newsletter";
 import Foot from "../../../components/footer/foot/foot";
 import Editions from "../../../components/formation/edition/editions";
 import Header from "../../../components/Header/header";
-import imbeach  from "../../../assets/Images/black-man-with-tennis-racket-beach.jpg";
+import imbeach  from "../../../assets/Images/freecompress-img1_beachtennis.jpg";
 
 
 
