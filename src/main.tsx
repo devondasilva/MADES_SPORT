@@ -17,6 +17,7 @@ import Tennis from "./pages/Formations/LawnTennis/Tennis";
 import Gallery from "./components/formation/gallery/gallery";
 import AboutUs from "./pages/AboutUs/aboutUs";
 import Dossier from "./pages/Dossier";
+import Articles from "./pages/Article";
 
 const root = document.getElementById("root");
 
@@ -36,6 +37,7 @@ if (root) {
         <Route path="/Nos_contacts" element={<ContactUs/>} />
         <Route path="/Galerie" element={<Gallery/>} />
         <Route path="/Dossier" element={<Dossier/>} />
+        <Route path="/Article" element={<Articles/>} />
       </Routes>
     </Router>
   );

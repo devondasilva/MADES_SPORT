@@ -53,30 +53,29 @@ const About: React.FC = () => {
       />
 
       <div className="bg-[#F2F1F1]">
-      <Section
-        subtitle="QUI NOUS SOMMES"
-        subtitleColor="#0A5473"
-        text="Créé il y a plus de treize (13) ans, MADES-BUS, est une organisation non gouvernementale dont la vocation première est de fédérer les spécialistes et les experts de l’univers sportif, en particulier celui du tennis, dans le but de renforcer leurs capacités techniques et managériales, aux côtés des institutions nationales, continentale internationales. Notre vision est de faire du métier d'entraîneur un véritable maillon de création d’emploi au service du développement du sport africain et de l’éducation de la jeunesse. Dans cet objectif, nous avons œuvré, pendant plus d’une décennie, à l’insertion, au renforcement de capacités et au suivi de nombreux joueurs et entraÏneurs dans leurs carrières respectives. Aujourd’hui plus que jamais les enjeux liés, à la professionnalisation du sport, à l’emploi des jeunes et à la lutte contre l’immigration clandestine, nous amènent à nous mobiliser davantage autour de notre vision première : « faire du métier d'entraîneur un véritable maillon de création d’em ploi au service du développement du sport africain et de l’éducation de la jeunesse africaine »."
-        imageSrc={Im2}
-        imageAlt="Description de l'image"
-        imagePosition="left"
-        buttonText="Lire la suite ->"
-      />
+        <Section
+          subtitle="QUI NOUS SOMMES"
+          subtitleColor="#0A5473"
+          text="Créé il y a plus de treize (13) ans, MADES-BUS, est une organisation non gouvernementale dont la vocation première est de fédérer les spécialistes et les experts de l’univers sportif, en particulier celui du tennis, dans le but de renforcer leurs capacités techniques et managériales, aux côtés des institutions nationales, continentale internationales. Notre vision est de faire du métier d'entraîneur un véritable maillon de création d’emploi au service du développement du sport africain et de l’éducation de la jeunesse. Dans cet objectif, nous avons œuvré, pendant plus d’une décennie, à l’insertion, au renforcement de capacités et au suivi de nombreux joueurs et entraÏneurs dans leurs carrières respectives. Aujourd’hui plus que jamais les enjeux liés, à la professionnalisation du sport, à l’emploi des jeunes et à la lutte contre l’immigration clandestine, nous amènent à nous mobiliser davantage autour de notre vision première : « faire du métier d'entraîneur un véritable maillon de création d’em ploi au service du développement du sport africain et de l’éducation de la jeunesse africaine »."
+          imageSrc={Im2}
+          imageAlt="Description de l'image"
+          imagePosition="left"
+          buttonText="Lire la suite →"
+        />
       </div>
 
       <div className="bg-[#3B94D0]">
-      <Section
-        subtitle="NOTRE PROJET"
-        subtitleColor="#FFFFFF"
-        text="Le projet actuel est un séminaire de formation des entraîneurs de l’espace francophone africain. Il a été initié dans le but de renforcer les capacités techniques et managériales des différents entraîneurs de sport, par une formation excellente de qualité avec pour finalité leur insertion. Il aura lieu du 12 au 18 Août 2024 à Cotonou au Bénin. Ledit séminaire de formation sera animé par des experts et des professionnels du domaine tennistique, qui partageront avec les apprenants leurs connaissances et savoir-faire. Au cours de cette formation, non seulement les capacités seront renforcées, l’appropriation de l’enseignement de nouvelles disciplines émergentes seront aussi enseignées aux participants à savoir : - le Beach Tennis , - le Padel - le Fitness cross fit Nous soulignons aussi que des formations linguistiques telles que l’anglais et l’arabe seront ajoutées à celles déjà annoncées, vue les exigences de certains clubs internationaux (au canada, en Corée du sud et certains pays du Golf)."
-        imageSrc={Im2}
-        imageAlt="Description de l'image"
-        imagePosition="right"
-        buttonText="Lire la suite ->"
-      />
+        <Section
+          subtitle="NOTRE PROJET"
+          subtitleColor="#FFFFFF"
+          text="Le projet actuel est un séminaire de formation des entraîneurs de l’espace francophone africain. Il a été initié dans le but de renforcer les capacités techniques et managériales des différents entraîneurs de sport, par une formation excellente de qualité avec pour finalité leur insertion. Il aura lieu du 12 au 18 Août 2024 à Cotonou au Bénin. Ledit séminaire de formation sera animé par des experts et des professionnels du domaine tennistique, qui partageront avec les apprenants leurs connaissances et savoir-faire. Au cours de cette formation, non seulement les capacités seront renforcées, l’appropriation de l’enseignement de nouvelles disciplines émergentes seront aussi enseignées aux participants à savoir : - le Beach Tennis , - le Padel - le Fitness cross fit Nous soulignons aussi que des formations linguistiques telles que l’anglais et l’arabe seront ajoutées à celles déjà annoncées, vue les exigences de certains clubs internationaux (au canada, en Corée du sud et certains pays du Golf)."
+          imageSrc={Im2}
+          imageAlt="Description de l'image"
+          imagePosition="right"
+          buttonText="Lire la suite →"
+        />
       </div>
 
-      
       <Section
         subtitle="EXPERIENCES"
         subtitleColor="#0A5473"
@@ -84,12 +83,11 @@ const About: React.FC = () => {
         imageSrc={Im2}
         imageAlt="Description de l'image"
         imagePosition="left"
-        buttonText="Lire la suite ->"
+        buttonText="Lire la suite →"
       />
 
-        <LatestNews /> 
-        <Newsletter />
-
+      <LatestNews />
+      <Newsletter />
     </>
   );
 };
